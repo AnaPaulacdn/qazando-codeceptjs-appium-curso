@@ -1,0 +1,23 @@
+{
+  "name": "app_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "android": "codeceptjs run --reporter mochawesome -c codecept.conf.js --override '{\"helpers\": {\"Appium\": { \"platform\": \"Android\", \"app\": \"/Users/anaprado/Desktop/app_automation/appsqazando /app-release.apk\", \"desiredCapabilities\": { \"appPackage\": \"com.qazandoapp\", \"appActivity\": \"MainActivity\", \"deviceName\": \"PixelApp\", \"platformVersion\": \"9\" }}}} ' ",
+    "ios": "codeceptjs run --reporter mochawesome -c codecept.conf.js --override '{\"helpers\": {\"Appium\": { \"platform\": \"iOS\", \"app\": \"/Users/anaprado/Desktop/app_automation/appsqazando /qazandoapp.app\", \"desiredCapabilities\": { \"deviceName\": \"iPhone 11 Pro Max\", \"platformVersion\": \"13.7\" }}}} ' ",
+    "test": "npx codeceptjs run --steps"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^3.0.7",
+    "mochawesome": "^6.2.2",
+    "node-random-name": "^1.0.1",
+    "random-number": "0.0.9",
+    "webdriverio": "^7.7.4"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.2"
+  }
+}
