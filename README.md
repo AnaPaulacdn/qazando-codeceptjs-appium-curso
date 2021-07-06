@@ -7,7 +7,7 @@
 npm install
 ````
 
-## To rn test:
+## To run test:
 
 iOS:
 ````
